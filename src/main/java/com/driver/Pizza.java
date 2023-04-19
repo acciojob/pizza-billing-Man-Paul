@@ -31,41 +31,41 @@ public class Pizza {
 
     public void addExtraCheese(){
         // your code goes here
-        if(cheeseCount == 0){
+        if(this.cheeseCount == 0){
             this.totalPrice += 80;
             this.bill += "Extra Cheese Added: " + 80 + "\n";
         }
-        cheeseCount = 1;
+        this.cheeseCount = 1;
     }
 
     public void addExtraToppings(){
         // your code goes here
-        if(toppingsCount == 0 && this.getPrice() == 300){   //veg
+        if(this.toppingsCount == 0 && this.getPrice() == 300){   //veg
             this.totalPrice += 70;
             this.bill += "Extra Toppings Added: " + 70 + "\n";
         }
-        else if(toppingsCount == 0 && this.getPrice() == 400){//non-veg
+        else if(this.toppingsCount == 0 && this.getPrice() == 400){//non-veg
             this.totalPrice += 120;
             this.bill += "Extra Toppings Added: " + 120 + "\n";
         }
-        toppingsCount = 1;
+        this.toppingsCount = 1;
     }
 
     public void addTakeaway(){
         // your code goes here
-        if(takeawayCount == 0){
+        if(this.takeawayCount == 0){
             this.totalPrice += 20;
             this.bill += "Paperbag Added: " + 20 + "\n";
         }
-        takeawayCount = 1;
+        this.takeawayCount = 1;
     }
 
     public String getBill(){
         // your code goes here
-        if(getbillCount == 0){
+        if(this.getbillCount == 0){
             this.bill += "Total Price: " + this.totalPrice + "\n";
         }
-        getbillCount = 1;
+        this.getbillCount = 1;
         return this.bill;
     }
 }
