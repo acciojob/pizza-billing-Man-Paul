@@ -9,6 +9,7 @@ public class Pizza {
     private int cheeseCount = 0;
     private int toppingsCount = 0;
     private int takeawayCount = 0;
+    private int getbillCount = 0;
 
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
@@ -61,7 +62,10 @@ public class Pizza {
 
     public String getBill(){
         // your code goes here
-        this.bill += "Total Price: " + this.totalPrice + "\n";
+        if(getbillCount == 0){
+            this.bill += "Total Price: " + this.totalPrice + "\n";
+        }
+        getbillCount = 1;
         return this.bill;
     }
 }
