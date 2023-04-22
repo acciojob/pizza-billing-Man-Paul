@@ -91,13 +91,12 @@ public class Pizza {
             }
             this.bill += "Total Price: " + this.price + "\n";
             this.isBillCreated = true;
-            return this.bill;
         }
 //        if(this.getbillCount == 0){
 //            this.bill += "Total Price: " + this.totalPrice + "\n";
 //        }
 //        this.getbillCount = 1;
 //        return this.bill;
-        return "";
+        return this.bill;
     }
 }
